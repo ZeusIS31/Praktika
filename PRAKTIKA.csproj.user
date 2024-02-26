@@ -7,7 +7,39 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Catalog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Korzina.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Profil.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Registracia.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Window1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Catalog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Korzina.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Profil.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Registracia.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Window1.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -6,7 +6,14 @@
         xmlns:local="clr-namespace:PRAKTIKA"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <Canvas>
+        <TextBlock Text="Курятник" FontSize="45" FontFamily="Arial Black"  Foreground="Red" Canvas.Left="283" Canvas.Top="29" />
+        <TextBlock Text="Вход в систему" FontSize="40" Canvas.Left="263" Canvas.Top="96" />
+        <TextBlock Text="Логин" FontSize="35" Canvas.Left="111" Canvas.Top="179" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <TextBlock Text="Пароль" FontSize="35" Canvas.Left="89" Canvas.Top="261" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <TextBox Name="Login" FontSize="35" Width="400" Canvas.Left="253" Canvas.Top="177"/>
+        <TextBox Name="Parol" FontSize="35" Width="400" Canvas.Left="253" Canvas.Top="259" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button Content="Вход" Background="Red" Foreground="White"  FontSize="35" Width="200"  Canvas.Left="198" Canvas.Top="338" HorizontalAlignment="Left" VerticalAlignment="Center" Click="Button_Click"/>
+        <Button Content="Регистрация" Background="Red" Foreground="White" FontSize="25" Width="200" Canvas.Left="416" Canvas.Top="345" HorizontalAlignment="Left" VerticalAlignment="Center" Click="Button_Click_1"/>
+    </Canvas>
 </Window>

@@ -1,0 +1,53 @@
+﻿<Window x:Class="PRAKTIKA.Catalog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRAKTIKA"
+        mc:Ignorable="d"
+        Title="Catalog" Height="550" Width="820">
+    <Canvas>
+        <Image Source="C:\Users\nikvk\Desktop\Практика Артём\PRAKTIKA\PRAKTIKA\Recourses/chicken.png" Height="62" Width="110" Canvas.Left="24" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Image Source="C:\Users\nikvk\Desktop\Практика Артём\PRAKTIKA\PRAKTIKA\Recourses/polz.png" Height="62" Width="66" Canvas.Left="281" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Text="Курятник" FontSize="25" FontFamily="Arial Black"  Foreground="Red" Canvas.Left="122" Canvas.Top="27" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Image Source="C:\Users\nikvk\Desktop\Практика Артём\PRAKTIKA\PRAKTIKA\Recourses/korzina.png" Height="77" Width="77" HorizontalAlignment="Left" Canvas.Left="674" VerticalAlignment="Top" Canvas.Top="3"/>
+        <Button Height="53" Width="59" Canvas.Left="683" Canvas.Top="15" Click="Button_Click" BorderBrush="Transparent">
+            <Button.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBlock Name="korziina" Canvas.Left="751" Canvas.Top="19" FontSize="30" Width="40" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Button Content="Профиль" Canvas.Left="348" Canvas.Top="21" FontSize="30"  Foreground="Red" Background="Transparent" BorderBrush="Red" FontFamily="Arial Black" Height="40" HorizontalAlignment="Left" VerticalAlignment="Center" Click="Button_Click_1"/>
+        <Button Content="Выход" Canvas.Left="514" Canvas.Top="21" FontSize="25"  Foreground="Red" Background="Transparent" BorderBrush="Red" FontFamily="Arial Black" Height="40" Click="Button1_Click_2" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Grid x:Name="myGrid" Height="416" Width="770" HorizontalAlignment="Center" Canvas.Top="108" VerticalAlignment="Top" Canvas.Left="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="300"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+        </Grid>
+    </Canvas>
+
+
+
+</Window>
